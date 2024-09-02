@@ -44,7 +44,7 @@ class CNNModel(nn.Module):
         return x
 # Load the trained model
 model = CNNModel()
-model.load_state_dict(torch.load(r'D:\Projects\American Sign Language\cnn_model_20_epochs.pth'))
+model.load_state_dict(torch.load(r'cnn_model_20_epochs.pth'))
 model.eval()
 
 def preprocess_image(image):
